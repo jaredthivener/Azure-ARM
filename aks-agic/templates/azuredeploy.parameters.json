@@ -1,0 +1,139 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "aksClusterEnablePrivateCluster": {
+      "value": true
+    },
+    "aksClusterNetworkPlugin": {
+      "value": "azure"
+    },
+    "aksClusterNetworkPolicy": {
+      "value": "azure"
+    },
+    "aksClusterPodCidr": {
+      "value": "10.244.0.0/16"
+    },
+    "aksClusterServiceCidr": {
+      "value": "10.3.0.0/16"
+    },
+    "aksClusterDnsServiceIP": {
+      "value": "10.3.0.10"
+    },
+    "aksClusterDockerBridgeCidr": {
+      "value": "172.17.0.1/16"
+    },
+    "aksClusterOutboundType": {
+      "value": "loadBalancer"
+    },
+    "aksClusterKubernetesVersion": {
+      "value": "1.25.6"
+    },
+    "aksClusterAdminUsername": {
+      "value": "azadmin"
+    },
+    "aksClusterSshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDMA0uGq5/nt21ip9MqCM9iXBY3QjPgZj0aR+0i2Fggi3Hm8/pJLkxK626rYRkt+PwpZ87VgqAm3j91YR9bb30sI17S3sjXlZTF1DsCwBlYYvS20zucSa/yud9ErizNrItalVZ2fJ50e0dQajaQYmBVq9VgaPt8xNB7ly7bVzbVjU8V+ds5COjIgLHiNw4+LKQyFatwtQChKdIgM5n0FAcKWy8EqpairnDNDp7V7D4l7M5jAxJwQuzMo89UdlQWXqQGgo2CP4FWc2ypyzRwpxqxJBb6P2YsiCow+29vtrgK1SLF1nxZPNznjhkmsUY+w+wBaU1ggm/wOhHxFb/C85x5rxwyT72NtRJ4OoQYCbh+mjrNdvDqDSipnbh/qIJzeAZISoRzEm3+ZM6nTo2M6TPeB8UpS7dIdW4rAwW1pUr+LnJs0q+LZ7P8ppeeIuTNUjyYBYMqTBfvA/QCoG2dcruCmxGtVio1PMbe8tr87HSW1FhpOoG8LTIYGEKw35YKzsDDBVNQDz6N/rJyd/eVf4hzL9Arcz5Ko6iK3gHGeZ+bbg+KrGHRHlwPJI227dUbauHbtjk+W4ALkh8TZ2aMMo+K5viQkQEg9DMO9Ecqdq2D5DC21AzDS7AIypRBh7fv3ISh+EH6y7El0ar149LoZkAh6KLvOprtv85+IGvv4lQoCw=="
+    },
+    "aadProfileManaged": {
+      "value": true
+    },
+    "aadProfileEnableAzureRBAC": {
+      "value": true
+    },
+    "aadProfileAdminGroupObjectIDs": {
+      "value": [
+        "20a5832e-1b19-45a7-ae82-0b5a59d60827"
+      ]
+    },
+    "podIdentityProfileEnabled": {
+      "value": true
+    },
+    "systemNodePoolName": {
+      "value": "system"
+    },
+    "systemNodePoolVmSize": {
+      "value": "Standard_DS3_v2"
+    },
+    "systemNodePoolAgentCount": {
+      "value": 1
+    },
+    "systemNodePoolMaxCount": {
+      "value": 3
+    },
+    "systemNodePoolMinCount": {
+      "value": 1
+    },
+    "systemNodePoolNodeTaints": {
+      "value": [
+        "CriticalAddonsOnly=true:NoSchedule"
+      ]
+    },
+    "userNodePoolName": {
+      "value": "user"
+    },
+    "userNodePoolVmSize": {
+      "value": "Standard_DS3_v2"
+    },
+    "userNodePoolAgentCount": {
+      "value": 1
+    },
+    "userNodePoolMaxCount": {
+      "value": 3
+    },
+    "userNodePoolMinCount": {
+      "value": 1
+    },
+    "virtualNetworkAddressPrefixes": {
+      "value": "10.0.0.0/8"
+    },
+    "aksSubnetName": {
+      "value": "AksSubnet"
+    },
+    "aksSubnetAddressPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "vmSubnetName": {
+      "value": "VmSubnet"
+    },
+    "vmSubnetAddressPrefix": {
+      "value": "10.1.0.0/16"
+    },
+    "applicationGatewaySubnetName": {
+      "value": "AppGatewaySubnet"
+    },
+    "applicationGatewaySubnetAddressPrefix": {
+      "value": "10.2.0.0/24"
+    },
+    "bastionSubnetAddressPrefix": {
+      "value": "10.2.1.0/24"
+    },
+    "logAnalyticsSku": {
+      "value": "PerGB2018"
+    },
+    "logAnalyticsRetentionInDays": {
+      "value": 30
+    },
+    "vmSize": {
+      "value": "Standard_F4s_v2"
+    },
+    "imagePublisher": {
+      "value": "Canonical"
+    },
+    "imageOffer": {
+      "value": "UbuntuServer"
+    },
+    "imageSku": {
+      "value": "18.04-LTS"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "vmAdminUsername": {
+      "value": "azadmin"
+    },
+    "vmAdminPasswordOrKey": {
+      "value": "wkHQJ2116018$$aB"
+    }
+  }
+}
